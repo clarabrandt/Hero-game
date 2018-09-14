@@ -18,5 +18,6 @@ const rest = (recover) => {
 const pickUpItem = (hero, item) => {
     hero.inventory.push(item);
 };
+
 const equipWeapon = () => {};
 
