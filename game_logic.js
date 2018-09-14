@@ -9,7 +9,10 @@ const hero = {
         damage: 2,
     }
 };
-function rest (){};
-function pickUpItem (){};
-function equipWeapon (){};
 
+const rest = (recover) => {
+    recover.health = 10;
+};
+
+const pickUpItem = () => {};
+const equipWeapon = () => {};
