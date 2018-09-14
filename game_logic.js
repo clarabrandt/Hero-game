@@ -12,6 +12,7 @@ const hero = {
 
 const rest = (recover) => {
     recover.health = 10;
+    return recover;
 };
 
 const pickUpItem = () => {};
