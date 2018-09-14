@@ -2,5 +2,6 @@
 const hero = {
     name: 'Maximus',
     heroic: true,
+    inventory: [],
 };
 
