@@ -20,6 +20,8 @@ const pickUpItem = (hero, item) => {
 };
 
 const equipWeapon = (hero) => {
-    hero.weapon = hero.inventory[0];
+    if (hero.inventory.length > 0){
+        hero.weapon = hero.inventory[0];
+    }
 };
 
