@@ -19,5 +19,7 @@ const pickUpItem = (hero, item) => {
     hero.inventory.push(item);
 };
 
-const equipWeapon = () => {};
+const equipWeapon = (hero) => {
+    hero.weapon = hero.inventory[0];
+};
 
