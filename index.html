@@ -6,13 +6,15 @@
     <link href="game_logic.css" rel="stylesheet"/>
 </head>
 <body>
+  <div id='container'>
+    <input type="text" id='name'>
+    <button onclick='changeName(hero)'>Save</button>
+    <br>
+    <img id='inn' onclick='rest(hero)'>
+    <img id='dagger' onclick='pickUpItem(hero, {type: "dagger", damage: 2})'>
+    <img id='bag' onclick='equipWeapon(hero)'>
 
-
-  <img id='inn' onclick='rest(hero)'>
-  <img id='dagger' onclick='pickUpItem(hero, {type: "dagger", damage: 2})'>
-  <img id='bag' onclick='equipWeapon(hero)'>
-
-
+  </div>
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
   <div id="mocha"></div>

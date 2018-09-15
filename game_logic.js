@@ -24,7 +24,12 @@ const equipWeapon = (hero) => {
         hero.weapon = hero.inventory[0];
     }
 };
-
+let changeName = (hero) => {
+    const nameInput = document.getElementById('name');
+    const newName = nameInput.value; 
+    hero.name = newName;
+    displayStatus();
+};
 const displayStatus = () => {
     document.write(JSON.stringify(hero));
 }
