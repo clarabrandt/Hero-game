@@ -25,3 +25,7 @@ const equipWeapon = (hero) => {
     }
 };
 
+const displayStatus = () => {
+    document.write(JSON.stringify(hero));
+}
+displayStatus();
